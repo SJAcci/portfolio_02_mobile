@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* base */
+
+#subContents{ width: 100%; margin: 0 auto; padding: 25px 15px; box-sizing: border-box; overflow: hidden; }
+#subContents > div{ width: 100%; margin-bottom: 25px;  }
+#subContents h3{
+    position: relative; 
+    float: left; 
+    width: 100%; 
+    margin-bottom: 30px; padding-left: 15px; box-sizing: border-box;
+    color: #246b47; font-size: 1rem; 
+}
+#subContents h3:after{
+    position: absolute; left: 0; top: 30px;
+    content: '';
+    width: 100%; height: 3px; background-color: #246b47;
+}
+
+/* membership, creditCard */
+#subContents .list{ width: 100%; overflow: hidden; }
+#subContents .list li{ 
+    float: left; width: calc(50% - 10px); height: 60px; 
+    box-sizing: border-box; margin-bottom: 10px; padding: 0 10px; 
+    border: 1px solid #ccc; line-height: 60px; 
+}
+#subContents .list li:nth-child(2n){ margin-left: 10px; }
+#subContents .list a{ font-size: 0.875rem; }
+#subContents .list a:after{ content: '〉'; font-size: 0.875rem; float: right; }
+
+
+/* promotionGuide */
+#promotionGuide{ margin-bottom: 0; }
+#promotionGuide h4{ 
+    float: left; width: 80px; height: 30px; 
+    margin: 25px 25px 25px 0; box-sizing: border-box; 
+    border-radius: 40px;
+    background-color: #246b47; 
+    color: #fff; font-weight: 400; font-size: 0.875rem; 
+    text-align: center; line-height: 30px; 
+}
+#promotionGuide ul{ width: 100%; overflow: hidden; }
+#promotionGuide li{ width: 100%;  overflow: hidden; margin: 25px 0; padding: 10px 0; box-sizing: border-box;
+border-bottom: 1px solid #ededed; border-top: 1px solid #ededed; }
+#promotionGuide li:last-child{ margin-bottom: 0; }
+#promotionGuide li > p{
+    display: block; 
+    float: left; width: calc(100% - 105px);
+    font-size: 0.875rem; color: #666; 
+    text-align: justify; 
+}
+#promotionGuide li:last-child p{ padding-top: 20px; }
+#promotionGuide a{ 
+    float: left; 
+    width: 150px; height: 30px;
+    margin-top: 10px; 
+    border-radius: 5px; 
+    border: 2px solid #246b47; text-align: center; line-height: 30px; 
+    color:  #246b47; font-weight: 400; font-size: 0.875rem;
+}
+#promotionGuide a:after{ content: '〉'; float: right; font-weight: 700; }

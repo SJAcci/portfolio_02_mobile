@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* base */
+#subContent{ width: 100%; margin: 0 auto; }
+#subContents .conWrap{ padding-top: 25px; box-sizing: border-box; overflow: hidden; }
+.conWrap .list{ width: 100%; background-color: aliceblue; }
+#subContents .conWrap li{ width: 100%; }
+#subContents .conWrap p{ width: 100%; padding-right: 30px; box-sizing: border-box; font-size: 0.75rem;  color: #666; }
+
+
+.tabBox{
+    position: relative; top: -50px;
+    width: 100%; margin: 0 auto; padding-right: 15px; padding-left: 15px; 
+    box-sizing: border-box; 
+}
+.tabBox .btn{ width: 100%; height: 50px; }
+.tabBox .btn li{ 
+    position: relative; 
+    float: left; width: 20%; height: 100%; text-align: center; 
+    line-height: 50px; 
+}
+.tabBox .btn a{ 
+    display: inline-block; 
+    width: 100%; height: 100%; 
+    font-size: 0.75rem; color: #999; font-weight: 600; 
+}
+
+
+/* tabBox active */
+.tabBox .btn a.active{ color: #246b47; background-color: #e9f0ec; }
+.tabBox .btn a.active:after{ 
+    display: block; 
+    position: absolute; bottom: -2px; left: 0; right: 0; 
+    content: ''; background-color: #246b47; width: 100%; height: 5px; 
+}
+
+/* contents view */
+.tabBox .conWrap{ width: 100%; }
+.tabBox .conWrap > div{
+    display: none;
+    width: 100%; overflow: hidden;
+}
+
+
+/* orderPizza*/
+.conWrap .question{
+    float: left; 
+    width: calc(100% - 20px); padding: 15px 30px 15px 15px; box-sizing: border-box; 
+    border-bottom: 1px solid #ccc;
+}
+.conWrap .question:before{
+    float: left; 
+    content: "Q"; 
+    width: 20px; 
+    color: #246b47; font-weight: 700;
+}
+.conWrap .question:after{
+    position: absolute; right: 20px; 
+    content: '∨';
+    font-weight: 700;
+}
+.conWrap .question.active:after{
+    transform: rotate(180deg);
+}
+.conWrap .answer{
+    display: none;
+    float: left;
+    width: 100%; height: 100%; line-height: 1.125rem;
+    padding: 30px 0 30px 40px; box-sizing: border-box; 
+    background-color: #e9f0ec; 
+    border-bottom: 1px solid #ccc; 
+}
+.conWrap .answer:before{
+    position: absolute; left: 30px;
+    content: "A";  
+    color: #ffd700; font-weight: 700;
+}

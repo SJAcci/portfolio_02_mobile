@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#mainImg{
+    width: 100%; height: 130px;
+    background-repeat: no-repeat; background-size: cover;
+    background-position: center;
+}
+.subMainBg01{ background-image: url(../images/sub/banner_01.png); }
+.subMainBg02{ background-image: url(../images/sub/banner_02.png); }
+.subMainBg03{ background-image: url(../images/sub/banner_03.png); }
+.subMainBg04{ background-image: url(../images/sub/banner_04.png); }
+.subMainBg05{ background-image: url(../images/sub/banner_05.png); }
+
+#subTitle{
+    width: 100%; height: 160px; 
+    background-color: #fff; box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+#subTitle h3{
+    width: 100%; height: 60px; 
+    margin-top: 40px; box-sizing: border-box;
+    color: #333; font-size: 1.5rem; font-weight: 400;
+    text-align: center; letter-spacing: 3px; line-height: 60px;
+}
+#subTitle .indicator{ width: 100%; height: 30px; text-align: center; line-height: 30px; }
+#subTitle .indicator li{ display: inline-block; margin: 0 5px; }
+#subTitle .indicator li:after{
+    position: relative; left: 5px; top: 3px;
+    content: '·'; font-weight: 500; font-size: 1rem;
+}
+#subTitle .indicator li:last-child:after{ content: ''; }
+#subTitle .indicator a{ color: #999; font-size: 0.75rem; font-weight: 300; }
+#subTitle .indicator li:last-child a{ color: #246b47; font-weight: 500; }
+#subTitle .indicator:before, #subTitle .indicator:after{
+    content: '';
+    position: relative; left: 0; right: 0; bottom: 0;
+    display: block;
+    width: 200px; height: 1px; 
+    margin: 0 auto; box-sizing: border-box; 
+    background-color: #ccc;
+}

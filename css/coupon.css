@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* base */
+#subContents{ 
+    position: relative; 
+    width: 100%; margin: 0 auto; padding: 50px 15px; box-sizing: border-box; 
+    background-image: url(../images/couponandevent/bg_subcontents.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; background-position: center;
+}
+
+#contentsWrap{ width: 100%; border-bottom: 1px solid #ededed; }
+#contentsWrap #searchBox{
+    position: relative; 
+    display: block;
+    width: 100%; height: 50px; 
+    padding: 0 15px; box-sizing: border-box; 
+    border: 1px solid #ccc; border-radius: 5px; 
+    font-size: 1rem; line-height: 1rem; color: #333; 
+}
+#contentsWrap form{ position: relative; width: 100%; margin: 0 auto; }
+#contentsWrap input::placeholder{ color: #999; letter-spacing: 1px; }
+#searchBtn{
+    position: absolute; top: 0; right: 0; 
+    width: 50px; height: 50px;
+    background-image: url(../images/couponandevent/icon_search.png);
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-color: transparent; border: none; 
+}
+
+#titleWrap{ width: 100%; margin: 0 auto; padding: 50px 0 0; box-sizing: border-box; }
+#titleWrap > h5{ 
+    position: relative; 
+    margin-bottom: 30px; padding-left: 15px; box-sizing: border-box;
+    color: #246b47; font-size: 1rem; 
+}
+#titleWrap > h5:after{
+    position: absolute; left: 0; top: 30px;
+    content: '';
+    width: 100%; height: 5px; background-color: #246b47;
+}
+#titleWrap ul{ margin-bottom: 50px;}
+#titleWrap li{ color: #666; font-size: 0.875rem; line-height: 1.5rem; }
+#titleWrap span{ color: #246b47; font-size: 0.875rem; font-weight: 600; }
+#titleWrap li:before{
+    content: '· '; font-size: 1rem; font-weight: 700; color: #ffd700;  
+}

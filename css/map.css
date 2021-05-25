@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+#subContents{ width: 100%; margin: 0 auto; padding: 0 15px; box-sizing: border-box; }
+
+/* map */
+.map_wrap{
+    position: relative;
+    width: 100%; margin: 50px 0; 
+}
+#map{ width: 100%; height: 300px; }
+#menu_wrap{ width: 100%; }
+#menu_wrap .option{ position: absolute; top: -90px; width: 100%; }
+#menu_wrap .option form{ float: left; font-size: 1rem; letter-spacing: 1px; color: #666; }
+#menu_wrap .option form p{ 
+    float: left; 
+    margin-right: 5px; line-height: 40px; 
+    font-size: 0.75rem; color: #999; letter-spacing: 1px;
+}
+#menu_wrap #keyword{ 
+    float: left;
+    padding: 5px; box-sizing: border-box; 
+    border: none; border-bottom: 1px solid #ccc;  
+    color: #666; font-size: 1rem; letter-spacing: 1px;
+    background-color: transparent; 
+}
+#menu_wrap .option button{ 
+    display: block;
+    position: absolute; right: 0; bottom: 5px; 
+    width: 40px; height: 40px;  
+    border: none; 
+    background-image: url(../images/store/store_icon_search.png);
+    background-color: transparent; background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* placeList */
+#placesList .item{
+    margin-top: 10px;
+    padding: 15px 20px; 
+    border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;
+    cursor: pointer;
+}
+#placesList .item span{ display: block; }
+#placesList .item h5{ font-size: 1.125rem; margin-bottom: 5px; }
+#placesList .item .info{ color: #666; }
+#placesList .info .gray{ color: #999; }
+#placesList .info .tel{ color: #246b47; }
+#placesList .item .markerbg{
+    float: right; 
+    width: 50px; height: 50px; 
+    margin: 25px 0; box-sizing: border-box; 
+    background-position: center; 
+    background-image: url(../images/store/icon_mapmarker.png); background-repeat: no-repeat;
+    background-size: contain;
+}

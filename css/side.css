@@ -1,0 +1,31 @@
+@charset "UFT-8";
+
+#subContents{ width: 100%; padding: 25px 15px; margin: 0 auto; box-sizing: border-box;   }
+
+.list{ width: 100%; overflow: hidden; }
+.list > li{
+    float: left; 
+    width: calc(50% - 5px); height: 280px; 
+    margin-bottom: 2px; box-sizing: border-box; 
+}
+.list > li:nth-child(2n){ margin-left: 10px; }
+
+.imgBox{
+    width: 100%; 
+    overflow: hidden; box-sizing: border-box;
+}
+.conWrap img{ width: 100%; }
+
+.textBox{
+    width: 100%; 
+    padding: 10px; box-sizing: border-box; 
+}
+.conWrap h5{
+    margin-bottom: 10px; box-sizing: border-box;
+    color: #246b47; font-size: 1rem; 
+}
+.textBox li{ 
+    float: left; line-height: 15px; 
+    color: #6b2424; margin-right: 10px; font-size: 0.75rem; 
+}
+.textBox p{ float: left; margin-top: 5px; color: #666; font-size: 0.7rem; }

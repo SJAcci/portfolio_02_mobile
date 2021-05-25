@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>피자땅 | 회원가입</title>
+        
+        <link rel="shortcut icon" href="../images/common/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/common/favicon_ios.png">
+        <link rel="icon" sizes="192x192" href="../images/common/favicon_android.png">
+       
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/sub.css">
+        <link rel="stylesheet" href="../css/join.css">
+        
+        <script src="../js/jquery-1.12.0.min.js"></script>
+        <script src="../js/jquery.easing.1.3.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/sub.js"></script>
+        <script src="../js/join.js"></script>
+        <script src="http://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    </head>
+    <body>
+        <div class="panel">
+            <div class="panelTop"></div>
+            <div class="panelBottom">
+                <a href="login.html"><img src="../images/common/panel_icon_login.png" alt="로그인아이콘"></a>
+                <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+            <nav class="mNav">
+                <ul>
+                    <li>
+                        <a href="#menu" title="메뉴 하위메뉴보기" class="topNav">MENU</a>
+                        <ul class="subNav">
+                            <li><a href="../menu/pizza.html">&#45; 피자</a></li>
+                            <li><a href="../menu/side.html">&#45; 사이드</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#store" title="스토어 하위메뉴보기" class="topNav">STORE</a>
+                        <ul class="subNav">
+                            <li><a href="../store/store.html">&#45; 주변매장찾기</a></li>
+                            <li><a href="../store/brand.html">&#45; 피자땅 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#couponandevent" title="쿠폰 앤 이벤트 하위메뉴보기" class="topNav">COUPON&amp;EVENT</a>
+                        <ul class="subNav">
+                            <li><a href="../couponandevent/coupon.html">&#45; 쿠폰확인</a></li>
+                            <li><a href="../couponandevent/event.html">&#45; 이벤트</a></li>
+                            <li><a href="../couponandevent/eventother.html">&#45; 제휴이벤트</a></li>
+                            <li><a href="../couponandevent/promotion.html">&#45; 할인안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#cscenter" title="씨에스 센터 하위메뉴보기" class="topNav">CS CENTER</a>
+                        <ul class="subNav">
+                            <li><a href="../cscenter/cscenter.html">&#45; 고객센터</a></li>
+                            <li><a href="../cscenter/faq.html">&#45; 자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#more" title="더보기 하위메뉴보기" class="topNav">MORE</a>
+                        <ul class="subNav">
+                            <li><a href="../more/notice.html">&#45; 공지사항</a></li>
+                            <li><a href="../more/news.html">&#45; 보도자료</a></li>
+                            <li><a href="../more/franchise.html">&#45; 프렌차이즈</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="panelIcon">
+            <a href="#panelOpen" title="패널열기">
+                <span class="line01"></span>
+                <span class="line02"></span>
+                <span class="line03"></span>
+            </a>
+        </div>
+        <div class="bodyWrap">
+            <header>
+                <h1>
+                    <a href="../index.html">
+                        <img src="../images/common/logo.png" alt="피자땅 로고">
+                    </a>
+                </h1>
+                <a href="#searchOpen" title="검색창열기" id="searchIcon">
+                    <img src="../images/common/icon_search.png" alt="검색아이콘">
+                </a>
+            </header>
+            <div class="searchBox">
+                <form action="#">
+                    <input type="text" id="search" placeholder="Store Search">
+                    <label for="search">검색입력상자</label>
+                    <a href="../store/store.html" id="findStore"><img src="../images/common/search_icon_findstore.png" alt=""></a>
+                    <a href="#" id="closeSearch"><img src="../images/common/search_icon_x.png" alt="검색창 닫기버튼"></a>
+                </form>
+            </div>
+            <div class="searchBg"></div>
+            <main>
+                <div id="subTitle">
+                    <h3>회원가입</h3>
+                    <ul class="indicator">
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="join.html">회원가입</a></li>
+                    </ul>
+                </div>
+                <div id="subContents">
+                    <div class="joinBox">
+                        <form name="joinForm" id="joinForm" method="post" action="#">
+                            <div>
+                                <label for="name">· 이름</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div>
+                                <label for="id">· 아이디</label>
+                                <input type="text" placeholder="이메일 입력" id="id">
+                                <button>중복확인</button>
+                            </div>
+                            <div>
+                                <label for="pw">· 비밀번호</label>
+                                <input type="text" placeholder="비밀번호 입력" id="pw" maxlength="20">
+                                <label for="pwChk" class="away">비밀번호재확인 입력상자</label>
+                                <input type="text" placeholder="비밀번호 재확인" id="pwChk" maxlength="20">
+                                <span class="red">* 비밀번호가 같지 않습니다.</span>
+                                <p>※ 공백없이 영문(소), 숫자 6~20자 사용가능</p>
+                            </div>
+                            <div class="birthWrap">
+                                <span id="birth">· 생년월일</span>
+                                <select name="birth01" id="birth01" class="box02"></select>
+                                <label for="birth01">년</label>
+                                <select name="birth02" id="birth02" class="box02"></select>
+                                <label for="birth02">월</label>
+                                <select name="birth03" id="birth03" class="box02"></select>
+                                <label for="birth03">일</label>
+                            </div>
+                            <div>
+                                <label for="tel">· 휴대전화</label>
+                                <input type="text" placeholder="-없이 숫자만 입력" id="tel" maxlength="11">
+                            </div>
+                            <div>
+                                <label for="address">· 주소</label>
+                                <input type="text" id="address">
+                                <button type="button" id="addressBtn" onclick="sample2_execDaumPostcode()">우편번호찾기</button>
+                                <label for="address01" class="away">우편번호 입력상자</label>
+                                <input type="text" id="address01" placeholder="우편번호">
+                                <label for="address02" class="away">나머지주소 입력상자</label>
+                                <input type="text" id="address02" placeholder="상세주소">
+                            </div>
+                            <fieldset class="allChk">
+                                <input type="checkbox" id="allChk">
+                                <label for="allChk">모두 동의하기</label>
+                            </fieldset>
+                            <fieldset class="checkBox">
+                                <input type="checkbox" id="agreeChk01">
+                                <label for="agreeChk01">고유식별정보처리에 동의합니다</label><br>
+                                <input type="checkbox" id="agreeChk02">
+                                <label for="agreeChk02">이용약관에 동의합니다</label><br>
+                                <input type="checkbox" id="agreeChk03">
+                                <label for="agreeChk03">개인정보수집에 동의합니다</label>
+                            </fieldset>
+                            <button type="submit" id="submit">회원가입</button>
+                            <div id="layer">
+                                <img src="http://t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" onclick="closeDaumPostcode()" alt="닫기 버튼">
+                            </div>
+                            <script src="../js/post.js"></script>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="fTop">
+                    <div class="info">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">창업안내</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:000-0000">주문전화</a></li>
+                            <li><a href="tel:010-000-0000">가맹문의</a></li>
+                            <li><a href="tel:02-000-0000">대표번호</a></li>
+                            <li><a href="#">팩스 02-000-0001</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="follow">
+                        <h4>Follow</h4>
+                        <ul>
+                            <li><a href="#"><img src="../images/common/ftop_icon_facebook.png" alt="페이스북 바로가기 아이콘"></a></li>
+                            <li><a href="#"><img src="../images/common/ftop_icon_instagram.png" alt="인스타그램 바로가기 아이콘"></a></li>
+                            <li><a href="#"><img src="../images/common/ftop_icon_youtube.png" alt="유튜브 바로가기 아이콘"></a></li>
+                            <li><a href="#"><img src="../images/common/ftop_icon_twitter.png" alt="트위터 바로가기 아이콘"></a></li>
+                        </ul>
+                    </div>
+                    <div class="family">
+                        <button>
+                            <span class="text">Family Site</span>
+                            <span class="icon">▼</span>
+                        </button>
+                        <ul>
+                            <li><a href="#" target="_blank">오븐에 빠진 닭</a></li>
+                            <li><a href="#" target="_blank">투핑거스</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fBottom">
+                    <ul class="fNav">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                    <p>Copyright &copy;2020 PIZZATTANG, All Rights Reserved 서울특별시 강남구 학동로  11길 6</p>
+                </div>
+                <aside class="topBtn">
+                    <a href="#">
+                        ▲<br>
+                        TOP
+                    </a>
+                </aside>
+            </footer>
+            <div id="qNav">
+                <ul>
+                    <li><a href="../qnav/order.html">주문하기</a></li>
+                    <li><a href="../qnav/quickorder.html">퀵오더</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

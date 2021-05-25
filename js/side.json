@@ -1,0 +1,20 @@
+{
+    "side" : [
+        {"name":"떡볶이파스타","price01":"￦ 7,000","descript":"스위티한 고구마와 크리미한 갈릭크림치즈 소스","image":"../images/menu/side/pasta_ttukbokki.png"},
+        {"name":"크림파스타","price01":"￦ 7,000","descript":"클래식 중에 클래식! 가장 피자다운 피자!","image":"../images/menu/side/pasta_cream.png"},
+        {"name":"치즈스파게티","price01":"￦ 7,000","descript":"불고기와 달콤소스 피자의 가장 한국적인 만남","image":"../images/menu/side/spagetti_cheeze.png"},
+        {"name":"새우볶음밥","price01":"￦ 7,000","descript":"진한 풍미의 페퍼로니를 부드러운 체다치즈가 감싸안은 전통 피자","image":"../images/menu/side/friedrice_shrimp.png"},
+        {"name":"낙지볶음밥","price01":"￦ 7,000","descript":"담백하고 고소한 치즈가 넘칠듯이 풍부하게 담긴 피자","image":"../images/menu/side/friedrice_octopus.png"},
+        {"name":"치즈프라이","price01":"￦ 6,000","descript":"불고기소스, 렌치소스 모짜렐라 치즈가 어울어진 프랜치 프라이","image":"../images/menu/side/side_cheezefries.png"},
+        {"name":"달콤닭강정","price01":"￦ 7,000","descript":"누구나 쉽게 먹을 수 있는 달달한 양념소스 닭강정","image":"../images/menu/side/side_chickengangjeong.png"},
+        {"name":"치킨텐더","price01":"￦ 4,500","descript":"닭날개 부위의 핫윙 특유의 향이 조화된 매콤한 맛이 일품! (5 piece)","image":"../images/menu/side/side_chickentender.png"},
+        {"name":"베이크윙봉","price01":"￦ 7,500","descript":"고소한 닭다리와 날개의 환상적 조합 (7 piece)","image":"../images/menu/side/side_bakewing.png"},
+        {"name":"국물떡볶이","price01":"￦ 6,000","descript":"매콤달콤한 국물과 쫄깃한 떡이 일품인 대한민국 대표간식","image":"../images/menu/side/side_ttukbbokki.png"},
+        {"name":"콘버터","price01":"￦ 4,000","descript":"잘 익은 달콤한 옥수수에 버터를 깔고 고소한 치즈와 조화를 이룬 환상적인 맛","image":"../images/menu/side/side_cornbutter.png"},
+        {"name":"치즈볼","price01":"￦ 3,000","descript":"고구마무스와 치즈가 가득한 달콤 쫀득한 치즈볼 (7 piece)","image":"../images/menu/side/side_cheezeball.png"},
+        {"name":"콘샐러드","price01":"￦ 2,500","descript":"상큼한 맛과 톡톡 씹히는 옥수수의 식감을 즐길 수 있는 샐러드","image":"../images/menu/side/side_cornsalad.png"},
+        {"name":"핫치즈퐁듀소스","price01":"￦ 1,500","descript":"핫치즈 퐁듀소스","image":"../images/menu/side/sauce_hotcheezefondue.png"},
+        {"name":"블루치즈퐁듀소스","price01":"￦ 1,500","descript":"블루치즈 퐁듀소스","image":"../images/menu/side/sauce_garlicdipping.png"},
+        {"name":"갈릭디핑","price01":"￦ 500","descript":"피자의 풍미를 높여주어 더욱 맛있게 드실 수 있습니다","image":"../images/menu/side/sauce_bluecheezefondue.png"} 
+    ]
+}

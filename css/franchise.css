@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* base */
+#subContents h4{ width; 100%; color: #333; font-size: 1.5rem; opacity: 0; text-align: center; margin: 25px auto;  }
+#procedure, #schedule, #estimate{ padding: 30px 15px; box-sizing: border-box;  }
+
+/* js */
+#subContents h4.active{ opacity: 1; transition: 0.6s ease-in-out; }
+
+/* procedure */
+#procedure{ width: 100%; overflow: hidden; background-color: #f3f8fd }
+#procedure .conWrap{ 
+    float: left; overflow: hidden; 
+    width: 100%; 
+    margin: 0 auto; box-sizing: border-box;
+}
+#procedure .conWrap > p{ 
+    opacity: 0; 
+    background-size: 15%; background-repeat: no-repeat; background-position: right;
+}
+#procedure .text{ 
+    float: left; 
+    width: calc(100% - 10px); padding: 5px 20% 10px 10px; box-sizing: border-box; 
+    font-size: 0.75rem; font-weight: 400; color: #666; 
+    line-height: 1rem; letter-spacing: 1px; 
+}
+#procedure .bold{ 
+    float: left; 
+    width: 100%; margin-bottom: 10px; 
+    font-size: 0.875rem; font-weight: 600; color: #333; 
+    line-height: 1rem; text-align: justify; 
+}
+#procedure .small{ font-size: 0.625rem; font-weight: 400; color: #999; line-height: 0.875rem; }
+
+/* steps */
+#step01{ background-image: url(../images/more/franchise_icon_step01.png); }
+#step02{ background-image: url(../images/more/franchise_icon_step02.png); }
+#step03{ background-image: url(../images/more/franchise_icon_step03.png); }
+#step04{ background-image: url(../images/more/franchise_icon_step04.png); }
+#step05{ background-image: url(../images/more/franchise_icon_step05.png); }
+#step06{ background-image: url(../images/more/franchise_icon_step06.png); }
+#step07{ background-image: url(../images/more/franchise_icon_step07.png); }
+
+
+/* js */
+#procedure .conWrap > p.active{ opacity: 1; transition: 0.3s ease-in-out; }
+#procedure #step01.active{ transition-delay: 0.3s; }
+#procedure #step02.active{ transition-delay: 0.6s; }
+#procedure #step03.active{ transition-delay: 0.9s; }
+#procedure #step04.active{ transition-delay: 1.2s; }
+#procedure #step05.active{ transition-delay: 1.5s; }
+#procedure #step06.active{ transition-delay: 1.8s; }
+#procedure #step07.active{transition-delay: 2.1s; }
+
+
+/* schedule */
+#schedule .conWrap{ opacity: 0; overflow: hidden; } 
+#schedule .conWrap > div{ width: 100%; float: left;  }
+#schedule ul{ padding: 10px; box-sizing: border-box; border: 2px solid #fff; }
+.conWrap li{ font-size: 0.75rem; }
+.conWrap > div > ul > li:first-child{ font-size: 1rem; margin-bottom: 2px; }
+#schedule li:before{ content: "· "; font-size: 1rem; color: #666; }
+#schedule .conWrap > div > ul > li:first-child:before{ content: ""; }
+
+/* box */
+#colum01 > ul{ float: left; width: 50%; height: 220px; }
+#colum01 > ul:last-child{  
+    background-size: cover; 
+    background-image: url(../images/more/franchise_schedule_banner.png); 
+}
+
+#colum02{ background-color: #fbfbfb; }
+#colum02 > ul{ float: left; width: 50%; height: 120px; }
+
+#colum03 ul{ width: 100%; }
+#colum03 .first{ background-color: #e9f0ec; }
+#colum03 .second{ background-color: #bdd2c7; }
+#colum03 .third{ background-color: #a7c4b5; }
+#colum03 .last{ background-color: #65977e; }
+
+#colum03 ul{ overflow: hidden; }
+#colum03 li{ float: left; color: #333; line-height: 1.5rem; margin-right: 15px; }
+#colum03 li:first-child{ font-size: 1.5rem; width: 65px; }
+#colum03 .last li{ color: #fff; }
+#colum03 .last li:before{ color: #fff; }
+
+
+/* js */
+#schedule .conWrap.active{ opacity: 1; transition: 0.6s ease-in-out; transition-delay: 0.3s; }
+
+
+/* estimate*/
+#estimate table{ opacity: 0; width: 100%; text-align: center; }
+#estimate caption{ font-size: 0.875rem; margin-bottom: 10px; }
+#estimate th{ 
+    padding: 5px; 
+    background-color: #246b47; font-weight: 400;
+    font-size: 0.875rem; color: #fff; letter-spacing: 1px; 
+}
+#estimate td{ 
+    padding: 2px; box-sizing: border-box; 
+    border-bottom: 1px solid #bdd2c7; font-size: 0.75rem; 
+}
+#estimate .greenBg td{ background-color: #e9f0ec; }
+#estimate .last td{ background-color: #a7c4b5; }
+#estimate .red{ color: #6b2424; }
+
+/* js */
+#estimate table.active{ opacity: 1; transition: 0.6s ease-in-out; transition-delay: 0.3s; }
+
+
+/* iBanner */
+#iBanner{ position: relative; }
+#iBanner img{ width: 100%; }
+#iBanner p{ 
+    position: absolute; top: calc(50% - 0.875rem); left: 0; right: 0; 
+    font-size: 1rem; color: #fff; font-weight: 500;
+    text-align: center; letter-spacing: 2px; 
+}
